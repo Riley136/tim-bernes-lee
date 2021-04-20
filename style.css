@@ -56,7 +56,10 @@ h1 {
 
 
 
-#bio {
+#bio,
+#writings,
+#work,
+#videos {
     padding: 50px;
     font-size: 42px;
     font-family: 'Monoton', cursive;
@@ -78,12 +81,12 @@ p {
     max-width: 450px;
     font-size: 17px;
     margin: 25px auto;
-  font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 .menu {
     list-style: none;
-    position: absolute;
+    position: fixed;
     top: 10px;
     z-index: 10;
     right: 30px;
@@ -100,6 +103,25 @@ p {
 }
 
 .links:hover {
-    background-color: azure;
+    background-color: azure
 }
 
+a {
+    text-decoration: none;
+}
+
+.article:hover {
+    color: darkgray;
+}
+
+.article {
+    font-family: 'Monoton', cursive;
+}
+
+#writings a {
+    font-size: 20px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
